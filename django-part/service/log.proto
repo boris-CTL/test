@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+service LogAndSaveJason {
+    rpc request_hist(LogRequest) returns (LogResponse);
+}
+
+message LogRequest {
+}
+
+message LogResponse {
+    repeated string value = 1;
+}
